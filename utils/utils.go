@@ -53,9 +53,18 @@ func TestReadUser(fileName string) {
 	fmt.Println(users.Users)
 	fmt.Println(len(users.Users))
 
-	for i := 0 ; i < len(users.Users); i++ {
-    fmt.Println("User Type: " + users.Users[i].Type)
-    fmt.Println("User Age: " + strconv.Itoa(users.Users[i].Age))
-    fmt.Println("User Name: " + users.Users[i].Name)
-    fmt.Println("Facebook Url: " + users.Users[i].Social.Facebook)	}
+	// for i := 0 ; i < len(users.Users); i++ {
+  //   fmt.Println("User Type: " + users.Users[i].Type)
+  //   fmt.Println("User Age: " + strconv.Itoa(users.Users[i].Age))
+  //   fmt.Println("User Name: " + users.Users[i].Name)
+  //   fmt.Println("Facebook Url: " + users.Users[i].Social.Facebook)
+	// }
+
+	// TODO: play around with how you can use goroutines to process users.Users
+	for _, v := range users.Users {
+		fmt.Println("User Type: " + v.Type)
+    fmt.Println("User Age: " + strconv.Itoa(v.Age))
+    fmt.Println("User Name: " + v.Name)
+    fmt.Println("Facebook Url: " + v.Social.Facebook)
+	}
 }
