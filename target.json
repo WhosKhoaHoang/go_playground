@@ -1,0 +1,22 @@
+[
+  {
+    "isHuman": true,
+    "name": "Khoa",
+    "age": 11
+  },
+  {
+    "isHuman": true,
+    "name": "Tang",
+    "age": 12
+  },
+  {
+    "isHuman": true,
+    "name": "San",
+    "age": 13
+  },
+  {
+    "isHuman": true,
+    "name": "Zang",
+    "age": 14
+  }
+]
